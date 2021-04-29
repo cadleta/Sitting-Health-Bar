@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Health Reminder.exe" version="1.0.0.1" publicKeyToken="c369ccc99233bd62" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="assets\health.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Health Reminder" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Health Reminder.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Health Reminder.exe" size="684984">
+      <assemblyIdentity name="Health Reminder" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>NpLQY42AGrT6uuJ81YDDGiupcQJwn+dd8AtVE3EjoR0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="assets\health.ico" size="101257">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EWg4qS3yfwz8UIyhFGOjHFmUjpVKR0caHaNYQyC4BTc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Health Reminder.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sound\death.wav" size="73772">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IB18pJv0iMFaRD+8IIQaSvJVLn+9aSRaPYjKoc1QucU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="sound\potion.wav" size="354960">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>z+t2BDNjoL7smy/cKMExW4QQzigFlDTRKpKjuzgvEtw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CERBERUS\chris" issuerKeyHash="5614b847ef3fccde825a355fd7dddea0b8033a55" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>r+GdhxiwT9yd8AqZoreiT/LRPwnOg07O5c0K6bzkTm8=</DigestValue></Reference></SignedInfo><SignatureValue>QU88/Nc7szv7L5IQr1Yzji/JPFmQokdWZ9Kf93VWAuBco3LYnpZ8UaqQgAxg4yDezAdAs7+qqMeZ5xJyrd2YA9JLQI62PjfGx316jwgRzOUQ/2sYyWBrUrLXRBxMeNskWv6YjQxE4nUpZ0C4LAcp+/ndAEnAZ8sj5UmavbpK3JE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>uTYU4e0+FtwJM99I4cI1vffWBFz7M20bs2rUDaZYhavKmt4Ku31vspwMAVEN8BypoToYFN13MyQM0eQJxwIK3PJqfKkC+9vTmp+g5C7+Kd8UqJcOowlbxSlNk0cLV7eL9T1k2T1RE1DJO+SzuCdSpd4zKzP2l2gg9DcFY9AU8C0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6f4ee4bce90acde5ce4e83ce093fd1f24fa2b7a2990af09ddc4fb018879de1af" Description="" Url=""><as:assemblyIdentity name="Health Reminder.exe" version="1.0.0.1" publicKeyToken="c369ccc99233bd62" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CERBERUS\chris</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ANc3syXZpJSvyuLCfS3Tp7k2r9SfyklW+whR28pJAHo=</DigestValue></Reference></SignedInfo><SignatureValue>Fv0WiGL2cEoMMkVg1bLJWSWIqaW5MRaBxtZpbxF3dOQMQK5fsfnGe+Kcf2DsAdbDwrzFP/Vuj8+hp+1hfAyBe2JVQXjL8NKDU7zWm3sYP4apOPkhPLGUw5pqPKn5ZE8dJDjuTAbGCWyF4pLiXg57yGqS6MaR6I4FB15h6z/wK1E=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>uTYU4e0+FtwJM99I4cI1vffWBFz7M20bs2rUDaZYhavKmt4Ku31vspwMAVEN8BypoToYFN13MyQM0eQJxwIK3PJqfKkC+9vTmp+g5C7+Kd8UqJcOowlbxSlNk0cLV7eL9T1k2T1RE1DJO+SzuCdSpd4zKzP2l2gg9DcFY9AU8C0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCATqgAwIBAgIQHVQl7QxPxrxA6xbI6NuKPDANBgkqhkiG9w0BAQsFADAnMSUwIwYDVQQDHhwAQwBFAFIAQgBFAFIAVQBTAFwAYwBoAHIAaQBzMB4XDTIxMDMwNDAxNTEwNFoXDTIyMDMwNDA3NTEwNFowJzElMCMGA1UEAx4cAEMARQBSAEIARQBSAFUAUwBcAGMAaAByAGkAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAuTYU4e0+FtwJM99I4cI1vffWBFz7M20bs2rUDaZYhavKmt4Ku31vspwMAVEN8BypoToYFN13MyQM0eQJxwIK3PJqfKkC+9vTmp+g5C7+Kd8UqJcOowlbxSlNk0cLV7eL9T1k2T1RE1DJO+SzuCdSpd4zKzP2l2gg9DcFY9AU8C0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQCYUO8O/6OZCK7zwIFNYATD6eykc9RbTjxCCI7MuP4UneEvPf0ntVL7jH0ceUoSvq04+lQukkrP88LlNWl0ZPmgDvOQ2Mm3ME3wwdHNs/1yvk194F+wWWgsCd8y6Z6adqc37U7ik0aM3oGCsXuhwBJKGr37Wg+OGJuiz+kHb/nKAg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
